@@ -110,8 +110,9 @@ export default function Relatorio() {
                 <YAxis stroke="#8892a4" />
                 <Tooltip
                   formatter={(value) => `R$ ${Number(value).toLocaleString('pt-BR')}`}
-                  contentStyle={{ backgroundColor: '#0f1f3d', border: '1px solid #1a2a4a', borderRadius: '8px' }}
+                  contentStyle={{ backgroundColor: '#0f1f3d', border: '1px solid #1a2a4a', borderRadius: '8px', color: '#f0f4f8' }}
                   labelStyle={{ color: '#fff' }}
+                  itemStyle={{ color: '#f0f4f8' }}
                 />
                 <Bar dataKey="valor" radius={[4, 4, 0, 0]}>
                   {financeiroData.map((entry, i) => (

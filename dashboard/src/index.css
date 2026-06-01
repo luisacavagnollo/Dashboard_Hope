@@ -38,6 +38,33 @@ h1, h2, h3, h4 {
   letter-spacing: -0.02em;
 }
 
+/* Force dark color scheme globally */
+html {
+  color-scheme: dark;
+}
+
+input, textarea, select, button {
+  color: inherit;
+}
+
+::placeholder {
+  color: var(--text-secondary);
+  opacity: 0.7;
+}
+
+option {
+  background: var(--navy);
+  color: var(--text-primary);
+}
+
+a {
+  color: var(--cyan);
+}
+
+p, span, td, th, li, label {
+  color: inherit;
+}
+
 /* App Layout */
 .app-layout {
   display: flex;
@@ -298,6 +325,10 @@ h1, h2, h3, h4 {
   border-bottom: none;
 }
 
+.data-table tr:hover {
+  background: var(--navy-lighter);
+}
+
 .data-table .row-alta {
   opacity: 0.6;
 }
@@ -421,6 +452,7 @@ h1, h2, h3, h4 {
   font-size: 14px;
   font-family: 'DM Sans', sans-serif;
   transition: border-color 0.2s ease;
+  color-scheme: dark;
 }
 
 .form-group input:focus,
@@ -571,6 +603,7 @@ h1, h2, h3, h4 {
   color: var(--text-primary);
   font-size: 14px;
   font-family: 'DM Sans', sans-serif;
+  color-scheme: dark;
 }
 
 .month-selector:focus {
